@@ -19,7 +19,6 @@ def get_ticket_ids(tickets):
         row = find_row(rows, board_pass[:7])
         column = find_row(column, board_pass[-3:])
         board_pass_ids.append(row*8+column)
-        #add green pixel to master image and save it
     board_pass_ids.sort()
     return board_pass_ids
 
