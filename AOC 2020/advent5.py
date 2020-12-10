@@ -6,10 +6,8 @@ def find_row(rows, board_pass):
     if len(rows)==1:
         return rows[0]
     elif board_pass[0] in ('B','R'):
-        #crate image of pixels with rows lit up (use master image as base,but dont edit original) and save it 
         return find_row(rows[len(rows)//2:], board_pass[1:])
     elif board_pass[0] in ('F','L'):
-        #create image of pixels with rows lit up (use master image as base, but dont edit original) and save it
         return find_row(rows[:len(rows)//2], board_pass[1:])
 
 #create master image
