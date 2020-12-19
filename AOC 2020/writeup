@@ -25,13 +25,6 @@ for num in data:
         break
 
 It's pretty self explanatory. For each number, find what other number adds to it to sum to 2020, then check if that number is in the list. If it is, the multiply them and there ya go.
-My other solution was this, which I'm assuming was also a very popular, yet slightly slower solution. 
-
-for num1 in data:
-    for num2 in data:
-        if num1 + num2 == 2020:
-            answer = num1*num2
-print(answer1)
 
 Heres the answer: *spoiler*788739*spoiler*
 **PROBLEM 2**
